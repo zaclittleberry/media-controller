@@ -1,0 +1,14 @@
+{
+  "name": "media-controller",
+  "version": "1.0.0",
+  "description": "Media Controller Backend Running on Docker",
+  "author": "Zac Littleberry",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "eiscp": "git://github.com/tillbaks/node-eiscp.git"
+  }
+}
