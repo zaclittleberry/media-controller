@@ -1,0 +1,18 @@
+networks:
+  media_controller:
+    driver: "local"
+version: '2'
+services:
+  ionic:
+    networks:
+      - "media_controller"
+    container_name: "media-controller"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: bash -c "npm start"
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules # http://dchua.com/2016/02/07/getting-npm-packages-to-be-installed-with-docker-compose/
+    ports:
+      - "49160:8080"
