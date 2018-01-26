@@ -1,6 +1,6 @@
 networks:
   media_controller:
-    driver: "local"
+    driver: "bridge"
 version: '2'
 services:
   ionic:
