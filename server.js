@@ -31,6 +31,10 @@ app.set('json spaces', 2);
  * PWR - System Power Command
  */
 
+app.get('/', (req, res) => {
+ res.json({status:'OK'});;
+});
+
 app.get('/receiver/system-power/standby', (req, res) => {
   pioneer("PWR 00");
   res.json({status:'OK'});;

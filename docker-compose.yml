@@ -15,4 +15,4 @@ services:
       - ./:/usr/src/app
       - /usr/src/app/node_modules # http://dchua.com/2016/02/07/getting-npm-packages-to-be-installed-with-docker-compose/
     ports:
-      - "49160:8080"
+      - "8080:8080"
