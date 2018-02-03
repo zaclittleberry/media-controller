@@ -4,7 +4,7 @@ const express = require('express');
 const exec = require('child_process').exec;
 
 function pioneer(cmd) {
-  let baseCmd = './onkyo-iscp 192.168.1.254 ';
+  let baseCmd = './onkyo-iscp 192.168.7.31';
   let fullCmd = baseCmd + cmd;
   exec(fullCmd, function(error, stdout, stderr) {
     // command output is in stdout
