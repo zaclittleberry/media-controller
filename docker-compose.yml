@@ -4,6 +4,7 @@ networks:
 version: '2'
 services:
   ionic:
+    restart: always
     networks:
       - "media_controller"
     container_name: "media-controller"
